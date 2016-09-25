@@ -23,10 +23,12 @@ RUN apt-get update -y && apt-get install -y \
     wget \
     postgis \
     python-pyinotify \
-    uwsgi-plugin-python
+    uwsgi-plugin-python \
+    unzip
 
 
 RUN pip install flask
+RUN pip install flask-user
 
 
 COPY requeriments.txt /tmp/requeriments.txt
