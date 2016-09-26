@@ -29,6 +29,7 @@ RUN apt-get update -y && apt-get install -y \
 
 RUN pip install flask
 RUN pip install flask-security
+RUN pip install flask-admin
 
 
 COPY requeriments.txt /tmp/requeriments.txt
